@@ -25,7 +25,7 @@ def page2():
        topic=cv.transform([topic]) 
        print("\n"+str(topic.shape)+"\n")
        with graph.as_default():
-           cla = load_model('review_analysis.h5')
+           cla = load_model('AmazonReview_model_saved1.h5')
            cla.compile(optimizer='adam',loss='binary_crossentropy')
            y_pred = cla.predict(topic) 
            print("pred is "+str(y_pred))
