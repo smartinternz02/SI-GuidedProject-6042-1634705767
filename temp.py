@@ -77,4 +77,4 @@ text = [ps.stem(word) for word in text if not word in set(stopwords.words('engli
 text = ' '.join(text)
 y_p = model.predict(cv.transform( [text]))
 # saving the model
-model.save("review_analysis.h5") 
+model.save("AmazonReview_model_saved1.h5") 
